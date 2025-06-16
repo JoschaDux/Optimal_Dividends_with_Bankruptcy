@@ -95,7 +95,7 @@ for j in reversed(range(grid.Nt)):
     
     # Save values
     V[:, j] = V_ns
-    d[:, j] = policy(V_ns_old)
+    d[:, j] = policy(V_ns)
     
     # Set values for next iteration step
     V_ns_old = V[:, j].copy()
